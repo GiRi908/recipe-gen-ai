@@ -1,0 +1,40 @@
+{
+    "kind": "collectionType",
+    "collectionName": "pantry_items",
+    "info": {
+        "singularName": "pantry-item",
+        "pluralName": "pantry-items",
+        "displayName": "Pantry Item",
+        "description": "Pantry items for users to track their ingredients"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "maxLength": 255
+        },
+        "quantity": {
+            "type": "string"
+        },
+        "unit": {
+            "type": "string"
+        },
+        "category": {
+            "type": "string"
+        },
+        "expiryDate": {
+            "type": "date"
+        },
+        "userId": {
+            "type": "string",
+            "required": true
+        },
+        "notes": {
+            "type": "text"
+        }
+    }
+}

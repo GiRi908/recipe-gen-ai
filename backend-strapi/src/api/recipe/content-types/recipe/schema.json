@@ -1,0 +1,81 @@
+{
+    "kind": "collectionType",
+    "collectionName": "recipes",
+    "info": {
+        "singularName": "recipe",
+        "pluralName": "recipes",
+        "displayName": "Recipe",
+        "description": "Recipe content type for AI Recipe Generator"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true,
+            "maxLength": 255
+        },
+        "description": {
+            "type": "text"
+        },
+        "ingredients": {
+            "type": "json",
+            "required": true
+        },
+        "instructions": {
+            "type": "richtext"
+        },
+        "prepTime": {
+            "type": "integer",
+            "min": 0
+        },
+        "cookTime": {
+            "type": "integer",
+            "min": 0
+        },
+        "servings": {
+            "type": "integer",
+            "min": 1,
+            "default": 4
+        },
+        "difficulty": {
+            "type": "enumeration",
+            "enum": [
+                "easy",
+                "medium",
+                "hard"
+            ],
+            "default": "medium"
+        },
+        "cuisine": {
+            "type": "string"
+        },
+        "dietaryRestrictions": {
+            "type": "json"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "aiGenerated": {
+            "type": "boolean",
+            "default": false
+        },
+        "userId": {
+            "type": "string",
+            "required": true
+        },
+        "tags": {
+            "type": "json"
+        },
+        "nutritionInfo": {
+            "type": "json"
+        }
+    }
+}
