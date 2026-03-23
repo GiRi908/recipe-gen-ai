@@ -1,6 +1,5 @@
 # AI Recipe Creator
 
-> Your personal AI-powered recipe assistant — generate custom recipes from your ingredients using Google Gemini AI.
 
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
